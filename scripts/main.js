@@ -1,6 +1,8 @@
+import { theBands } from "./bands.js";
+import { theBookings } from "./bookings.js";
 import { theVenues } from "./venues.js";
 
-const mainContainer = document.querySelector("#container");
+let mainContainer = document.querySelector(".container");
 
 const applicationHTML = `
 <h1>Tour Some Sugar On Me</h1>
