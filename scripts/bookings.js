@@ -1,6 +1,7 @@
-import { getBookings } from "./database.js";
+import { getBands, getBookings } from "./database.js";
 
 const bookings = getBookings();
+const bands = getBands();
 
 export const theBookings = () => {
   let bookingHTML = "<ul>";
@@ -13,3 +14,16 @@ export const theBookings = () => {
   bookingHTML += "</ul>";
   return bookingHTML;
 };
+
+document.addEventListener("click", (bookingClick) => {
+  const clickedBooking = bookingClick.target;
+  if (clickedBooking.dataset.type === "booking") {
+    for (const band of bands) {
+      if (band.name === clickedBooking.dataset.band) {
+        window.alert(
+          `${band.name}\n${band.genre}\nFormed in ${band.year_formed}\n${band.members} band members`
+        );
+      }
+    }
+  }
+});
