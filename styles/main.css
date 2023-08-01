@@ -4,7 +4,7 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: #f7f7f7; /* Light gray background */
+  background-color: #f7f7f7;
 }
 
 /* Header Styles */
@@ -12,18 +12,21 @@ h1 {
   text-align: center;
   font-size: 36px;
   margin: 20px 0;
-  color: #e76f51; /* Burnt Sienna color */
+  color: #8f2a3d;
 }
 
 /* Bookings Styles */
 .bookings {
+  display: flex;
+  flex-direction: column;
+  width: auto;
   margin: 20px;
 }
 
 .bookings h2 {
   font-size: 24px;
   margin-bottom: 10px;
-  color: #2a9d8f; /* Ocean Green color */
+  color: #2a9d8f;
 }
 
 .bookings ul {
@@ -34,9 +37,14 @@ h1 {
 .bookings li {
   font-size: 18px;
   margin-bottom: 10px;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 5px;
-  color: #264653; /* Dark Sienna color */
+  border: 1px solid #ccc;
+  padding: 5px;
+  color: #264653;
+}
+
+li[data-type="booking"]:hover {
+  background-color: #48bbaea7;
+  cursor: pointer;
 }
 
 /* Venues and Bands Container Styles */
@@ -47,31 +55,14 @@ h1 {
 }
 
 /* Venues Styles */
-.venues {
-  flex-basis: 45%;
-}
-
-.venues h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-  color: #e9c46a; /* Mustard Yellow color */
-}
-
-/* Bands Styles */
+.venues,
 .bands {
   flex-basis: 45%;
 }
 
+.venues h2,
 .bands h2 {
   font-size: 24px;
   margin-bottom: 10px;
-  color: #457b9d; /* Steel Blue color */
+  color: #2a9d8f;
 }
-
-/* Optional: Hover effect on bookings */
-/*
-  li[data-type="booking"]:hover {
-    background-color: #f5f5f5;
-    cursor: pointer;
-  }
-  */
