@@ -47,6 +47,16 @@ li[data-type="booking"]:hover {
   cursor: pointer;
 }
 
+li[data-type="venue"]:hover {
+  color: #48bbaea7;
+  cursor: pointer;
+}
+
+li[data-type="band"]:hover {
+  color: #48bbaea7;
+  cursor: pointer;
+}
+
 /* Venues and Bands Container Styles */
 .venues-band-container {
   display: flex;

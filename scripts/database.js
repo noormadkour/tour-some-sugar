@@ -195,6 +195,12 @@ const database = {
       venue_name: "Funky Warehouse",
       booking_date: "2023-08-03",
     },
+    {
+      id: 13,
+      band_name: "The Rhythmic Raccoons",
+      venue_name: "Rockin' Stadium",
+      booking_date: "2023-08-04",
+    },
   ],
 };
 
